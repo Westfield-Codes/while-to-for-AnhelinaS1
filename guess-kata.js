@@ -14,3 +14,15 @@
 /* For Loop Conversion */
 
 // Rewrite this as a for loop. 
+
+var answer = Math.floor(Math.random()*10)+1;
+var guess = 0;
+for (let guessCount = 0; guessCount<4; guessCount++){
+guess = prompt("Guess my number");
+if (guess==answer){
+alert("Right!");
+break;
+}
+else alert("Wrong!");
+if (guessCount == 3) alert("Out of guesses. The number was " + answer + ".");
+}
